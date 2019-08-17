@@ -2,12 +2,11 @@
 <html>
   <body>
     <h1>I am malicious Site</h1>
-    <h2>Now, I have redirected the page you came from to a different URL</h2>
+    <h2>Now, this malicious domain has redirected the page you came from to a different URL!</h2>
     <button onclick="window.close();">Close Current Tab</button>
   </body>
   <script>
     if (window.opener) {
-      window.alert('Thank you');
       window.opener.location = 'https://www.dhilipkmr.dev';
     }
   </script>
